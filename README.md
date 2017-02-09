@@ -4,6 +4,7 @@ Cross platform demo app built with NativeScript, Angular and Firebase.
 -----
 
 This app was built with two goals in mind. 
+
 1. To serve as a demo app for my Mobile Dorset talk: "Mobile development with NativeScript & Angular"
 2. To learn new things!
 
@@ -38,5 +39,9 @@ To add icon resources to action bar:
 - Use http://nsimage.nativescript.rocks/ to download iOS / Android resources
 - Add to /app/App_Resources for each platform.
 - Use as follows:
-    <ActionItem (tap)="createTopic()" ios.position="right" ios:icon="res://sort.png" android:icon="res://sort">
+
+```
+<ActionItem (tap)="createTopic()" ios.position="right" ios:icon="res://sort.png" android:icon="res://sort">
+```
+
 - Note: you need to uninstall the app and run it again for it to include the resource, livereload etc doesn't work.
