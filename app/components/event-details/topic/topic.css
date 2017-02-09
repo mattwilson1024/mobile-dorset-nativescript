@@ -1,0 +1,27 @@
+.topic-card {
+    margin: 10px;
+    padding: 10px;
+    border-width: 1px;
+    border-color: #ccc;
+}
+
+Button.vote-button {
+    width: 30;
+    height: 30;
+    padding: 5;
+    margin: 0;
+
+    border-radius: 5;
+    background-color: #ccc;
+    color: white;
+}
+
+Button.vote-button.voted {
+    background-color: #00cc66;
+    color: white;
+}
+
+Label.title {
+    margin-left: 10;
+    color: black;
+}

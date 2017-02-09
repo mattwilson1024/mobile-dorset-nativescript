@@ -1,0 +1,23 @@
+<ActionBar [title]="eventInfo?.dateFormatted" class="action-bar">
+    <ActionItem
+        (tap)="sortTopics()"
+        ios:icon="res://sort.png" android:icon="res://sort"
+        ios.position="right">
+    </ActionItem>
+
+    <ActionItem 
+        (tap)="createTopic()"
+        ios:icon="res://newtopic.png" android:icon="res://newtopic"
+        ios.position="right">
+    </ActionItem>
+</ActionBar>
+
+<TabView #tabview [(ngModel)]="tabSelectedIndex">
+    <StackLayout *tabItem="{title: 'Event Details'}" class="fa">
+        <EventOverview [event]="eventInfo"></EventOverview>
+    </StackLayout>
+    
+    <StackLayout *tabItem="{title: 'Lean Coffee'}">
+        <TopicList [eventId]="eventId" [topics]="topics"></TopicList>
+    </StackLayout>
+</TabView>

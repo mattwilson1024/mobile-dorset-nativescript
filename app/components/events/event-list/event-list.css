@@ -1,0 +1,19 @@
+.header {
+    font-weight: bold;
+    font-size: 20;
+
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+}
+
+.event-row {
+    padding-left: 10;
+    padding-right: 10;
+    padding-top: 20;
+    padding-bottom: 20;
+}
+
+.event {
+    margin-left: 10;
+}

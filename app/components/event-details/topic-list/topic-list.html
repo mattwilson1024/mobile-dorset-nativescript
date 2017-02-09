@@ -1,0 +1,7 @@
+<ScrollView>
+    <StackLayout>
+        <Topic *ngFor="let topic of topics" [eventId]="eventId" [topic]="topic"></Topic>
+
+        <Label *ngIf="!topics || topics.length === 0" text="Suggest the first topic by pressing the comment button above." class="no-topics-message" textWrap="true"></Label>
+    </StackLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<StackLayout>
+    <Label text="Please choose an event:" class="header"></Label>
+
+    <GridLayout *ngFor="let event of events" columns="auto, *" rows="auto" (tap)="onItemTap(event)" class="event-row">
+        <Label row="0" col="0" text="&#xf274;" class="fa" verticalAlignment="center" horizontalAlignment="center"></Label>
+        <Label row="0" col="1" [text]="event.dateFormatted" class="event fa"></Label>
+    </GridLayout>
+</StackLayout>

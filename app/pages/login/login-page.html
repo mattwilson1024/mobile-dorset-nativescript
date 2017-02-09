@@ -1,0 +1,23 @@
+<ScrollView>
+  <StackLayout class="login-container">
+    <Image src="res://header_logo" class="logo"></Image>
+
+    <StackLayout class="login-box">
+        <TextField #email 
+          [(ngModel)]="user.email"
+          hint="Email Address"
+          keyboardType="email"
+          autocorrect="false"
+          autocapitalizationType="none"></TextField>
+
+        <TextField #password 
+          [(ngModel)]="user.password"
+          hint="Password"
+          secure="true"></TextField>
+
+        <Button text="Sign in" class="submit-button" (tap)="login()"></Button>
+
+        <Button text="Register" class="register-button" (tap)="register()"></Button>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>

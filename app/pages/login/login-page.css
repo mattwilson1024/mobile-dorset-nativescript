@@ -1,0 +1,23 @@
+.login-box {
+  margin-left: 30;
+  margin-right: 30;
+  background-color: white;
+  opacity: 1;
+}
+.logo {
+  margin-top: 35;
+  margin-bottom: 35;
+  max-height: 130px;
+  width: 80%;
+}
+Button, TextField {
+  margin: 16;
+}
+.submit-button {
+  background-color: #CB1D00;
+  color: white;
+}
+.register-button {
+  background-color: #aaa;
+  color: black;
+}

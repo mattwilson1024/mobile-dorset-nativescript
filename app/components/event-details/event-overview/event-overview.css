@@ -1,0 +1,35 @@
+Label {
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 20;
+    margin-top: 10;
+}
+
+.talk-box {
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+    margin-bottom: 10;
+    padding-bottom: 10;
+    background-color: #eee;
+    border-radius: 10;
+}
+
+.talk-speaker {
+    color: #555;
+}
+
+.talk-detail {
+    color: #555;
+    font-size: 14;
+}
+
+.no-talks-message {
+    font-size: 14;
+    color: #555;
+}

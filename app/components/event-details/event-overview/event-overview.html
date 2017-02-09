@@ -1,0 +1,27 @@
+<ScrollView>
+    <StackLayout *ngIf="event">
+
+        <Label text="Event Details" class="header"></Label>
+
+        <GridLayout columns="auto, *" rows="auto, auto, auto" >
+            <Label row="0" col="0" text="&#xf073;" class="fa" verticalAlignment="top" horizontalAlignment="center"></Label>
+            <Label row="1" col="0" text="&#xf017;" class="fa" verticalAlignment="top" horizontalAlignment="center"></Label>
+            <Label row="2" col="0" text="&#xf041;" class="fa" verticalAlignment="top" horizontalAlignment="center"></Label>
+            
+            <Label row="0" col="1" [text]="event.dateFormatted" textWrap="true"></Label>
+            <Label row="1" col="1" [text]="event.timeFormatted" textWrap="true"></Label>
+            <Label row="2" col="1" [text]="event.location" textWrap="true"></Label>
+        </GridLayout>
+
+        <Label text="Talks" class="header"></Label>
+
+        <StackLayout *ngFor="let talk of event.talks" class="talk-box">
+            <Label [text]="talk.title" class="talk-title" textWrap="true"></Label>
+            <Label [text]="talk.speaker" class="talk-speaker" textWrap="true"></Label>
+            <Label [text]="talk.detail" class="talk-detail" textWrap="true"></Label>
+        </StackLayout>
+
+        <Label *ngIf="!event.talks || event.talks.length === 0" text="Stay tuned for details of talks at this event..." class="no-talks-message"></Label>
+        
+    </StackLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<ActionBar title="Events" class="action-bar">
+    <ActionItem 
+        (tap)="logout()"
+        ios:icon="res://logout.png" android:icon="res://logout"
+        ios.position="right"></ActionItem>
+</ActionBar>
+<EventList [events]="events$ | async"></EventList>
