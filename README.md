@@ -11,9 +11,9 @@ This app was built with two goals in mind.
 -----
 
 Resources from the Mobile Dorset talk:
-Video: https://youtu.be/1BMnq-FPVBw
-Slides: https://speakerdeck.com/mattwilson1024/mobile-development-with-nativescript-and-angular
-Code: https://github.com/mattwilson1024/mobile-dorset-nativescript
+* Video: https://youtu.be/1BMnq-FPVBw
+* Slides: https://speakerdeck.com/mattwilson1024/mobile-development-with-nativescript-and-angular
+* Code: https://github.com/mattwilson1024/mobile-dorset-nativescript
 
 -----
 
