@@ -10,6 +10,13 @@ This app was built with two goals in mind.
 
 -----
 
+Resources from the Mobile Dorset talk:
+Video: https://youtu.be/1BMnq-FPVBw
+Slides: https://speakerdeck.com/mattwilson1024/mobile-development-with-nativescript-and-angular
+Code: https://github.com/mattwilson1024/mobile-dorset-nativescript
+
+-----
+
 *Important Note*: This app requires a Firebase account to run, but no Firebase config is committed. 
 To set up firebase and be able to run the app, follow these steps:
 * Sign up for a Firebase account
